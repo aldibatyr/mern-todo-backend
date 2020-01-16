@@ -21,7 +21,7 @@ app.use(helmet());
 // app.use(morgan(morganOption));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017', { useNewUrlParser: true });
+mongoose.connect('mongodb://aldibatyr:Test123@ds263808.mlab.com:63808/heroku_b7qxp2th', { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', () => {
